@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-buttons></ion-menu-button>
+    </ion-button>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>2M media</ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-item>Name:<strong>{{contact.Name}}</strong></ion-item>
+      <ion-item>Email:<strong>{{contact.Email}}</strong></ion-item>
+      <ion-item>Tel:<strong>{{contact.Tel}}</strong></ion-item>
+    </ion-list>
+    <ion-card-content>
+      <ion-img src="{{contact.Location}}"></ion-img>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
